@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="skills.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/profile.jpeg" alt="Logo" />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../skills/skills.html">Skills</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li class="mobile-only">
+            <a
+              href="#"
+              onclick="
+                toggleModal();
+                return false;
+              "
+              >Lets Talk</a
+            >
+          </li>
+        </ul>
+
+        <button class="btn nav-btn" onclick="toggleModal()">Lets Talk</button>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+    <div id="contact-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleModal()">&times;</span>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email!</p>
+        <a href="mailto:rajdeep56550@proton.me?subject=Project Inquiry" class="modal-button">Send Email</a>
+      </div>
+    </div>
+    <div class="skills-container">
+      <div class="skills">
+        <h1>My Skills</h1>
+        <p>
+          I have a strong foundation in programming languages such as Python and
+          JavaScript. I am proficient in web development technologies
+          including HTML, CSS, and React. Additionally, I have experience with
+          control systems like Git.
+        </p>
+      </div>
+      <div class="skills-showcase">
+        <div class="skill-item">
+          <img src="../img/python.png" alt="Python" />
+          <p>Python</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/js.png" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/html-5.png" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/css-3.png" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/physics.png" alt="React" />
+          <p>React</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/postgre.png" alt="PostgreSQL" />
+          <p>PostgreSQL</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/icons8-mongo-db-50.png" alt="MongoDB" />
+          <p>MongoDB</p>
+        </div>
+        <div class="skill-item">
+          <img src="../img/social.png" alt="Git" />
+          <p>Git</p>
+        </div>
+        <div class="skill-item">
+          <img src="/img/figma.png" alt="Figma" />
+          <p>Figma</p>
+        </div>
+        <div class="skill-item">
+          <img src="/img/github.png" alt="GitHub"/>
+          <p>GitHub</p>
+        </div>
+      </div>
+    </div>
+    <script src="skills.js"></script>
+  </body>
+</html>

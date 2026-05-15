@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../img/profile.jpeg" alt="Logo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="../skills/skills.html">Skills</a></li>
+          <li><a href="../projects/projects.html">Projects</a></li>
+          <li class="mobile-only">
+            <a
+              href="#"
+              onclick="
+                toggleModal();
+                return false;
+              "
+              >Lets Talk</a
+            >
+          </li>
+        </ul>
+        <button class="btn nav-btn" onclick="toggleModal()">Lets Talk</button>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+    <div class="hero-section">
+      <div class="hero-content">
+        <h1>About Me</h1>
+        <p>
+          I am a passionate and dedicated software developer with a strong
+          background in web development. I have experience working with various
+          programming languages and frameworks, and I am always eager to learn
+          new technologies. My goal is to create innovative and efficient
+          solutions that make a positive impact on users' lives.
+        </p>
+        <p>
+          In my free time, I enjoy exploring new programming languages,
+          contributing to open-source projects, and staying up-to-date with the
+          latest trends in technology. I believe in continuous learning and
+          growth, and I am always looking for opportunities to expand my skill
+          set and collaborate with like-minded individuals.
+        </p>
+      </div>
+    </div>
+    <div class="container-two">
+      <div class="me">
+        <h3>My Approach</h3>
+      </div>
+      <div class="approach">
+        <div class="one">
+          <h4>01</h4>
+          <p>Master Frontend & design fundamentals</p>
+        </div>
+        <div class="two">
+          <h4>02</h4>
+          <p>Aechitech Full-Stack Connections</p>
+        </div>
+        <div class="three">
+          <h4>03</h4>
+          <p>Responsive, Scalable Applications</p>
+        </div>
+      </div>
+      <div class="about-two">
+        <div class="about-one">
+          <h1>01+</h1>
+          Year of Full Stack Learning
+        </div>
+        <div class="about-2">
+          <h1>10+</h1>
+          Frontend Projects built
+        </div>
+        <div class="about-three">
+          <h1>03+</h1>
+          Codebase Maintained
+        </div>
+      </div>
+    </div>
+    <div id="contact-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-btn" onclick="toggleModal()">&times;</span>
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email!</p>
+        <a
+          href="mailto:rajdeep56550@proton.me?subject=Project Inquiry"
+          class="modal-button"
+          >Send Email</a
+        >
+      </div>
+    </div>
+    <script src="about.js"></script>
+  </body>
+</html>
